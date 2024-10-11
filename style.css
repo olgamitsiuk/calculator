@@ -1,6 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .calc-body {
-font-family: Audiowide, sans-serif;
+    font-family: Audiowide, sans-serif;
+    width: 350px;
+    margin: 20px;
+    padding: 20px;
+    background: #D7CCC8;
+    border: 1px solid;
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75), inset -3px -2px 19px 1px rgba(84,83,84,1);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.results {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background: #607D8B;
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: right;
+}
+#result, #expression {
+    margin: 0;
+    width: 100%;
+}
+#result {
+    height: 50px;
+    font-size: 2em;
+}
+#expression {
+    height: 20px;
+}
+.numbers {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.operators {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
 
 }
+.clears {
+    width: 15%;
+}
+button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-family: Audiowide, sans-serif;
+    box-shadow: 0px 3px 0px 0px #212121;
+ }
+
+ button:active {
+    transform: translateY(2px);
+ }
+
+ .number, .operator, .equals {
+    background: #263238;
+    color: white;
+    font-size: 1.5em;
+  }
